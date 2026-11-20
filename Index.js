@@ -11,7 +11,7 @@ bot.start((ctx) => {
     
     // አዲስ ተጠቃሚ ከሆነ መዝግበው 100 ብር ስጠው
     if (!users[userId]) {
-        users[userId] = 
+        users[userId] = {
             id: userId,
             name: ctx.from.first_name,
             balance: 100, // የምዝገባ ቦነስ
